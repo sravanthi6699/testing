@@ -1,0 +1,122 @@
+niimh@bharathi-pc MINGW32 /d/ccras_pas (master)
+$ cd
+
+niimh@bharathi-pc MINGW32 ~
+$ cd /c
+
+niimh@bharathi-pc MINGW32 /c
+$ l
+bash: l: command not found
+
+niimh@bharathi-pc MINGW32 /c
+$ ls
+'$Recycle.Bin'/                       config.sys                 found.000/    git/                        MongoDB/   'Program Files'/  SSMS-Setup-ENU.exe*           Windows/
+autoexec.bat                          data/                      found.001/    hiberfil.sys                MSOCache/  ProgramData/      'System Volume Information'/  xampp/
+Cologne-sanskrit-dictionary-offline/  'Documents and Settings'@  ftconfig.ini  HPLJP1000_P1500_Series.log  PerfLogs/  Recovery/         Users/
+
+niimh@bharathi-pc MINGW32 /c
+$ cd git/
+
+niimh@bharathi-pc MINGW32 /c/git
+$ ls
+
+niimh@bharathi-pc MINGW32 /c/git
+$ git config --global user.name "sravanthi6699"
+
+niimh@bharathi-pc MINGW32 /c/git
+$ $ git config --global user.name "sravanthi6699"
+bash: $: command not found
+
+niimh@bharathi-pc MINGW32 /c/git
+$ git config --global user.email tanneeru.sravanti@gmail.com
+
+niimh@bharathi-pc MINGW32 /c/git
+$ git clone https://github.com/sravanthi6699/testing.git
+Cloning into 'testing'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+niimh@bharathi-pc MINGW32 /c/git
+$ ls
+testing/
+
+niimh@bharathi-pc MINGW32 /c/git
+$ cd testing/
+
+niimh@bharathi-pc MINGW32 /c/git/testing (master)
+$ ls
+README.md
+
+niimh@bharathi-pc MINGW32 /c/git/testing (master)
+$ ls
+README.md  test.txt.txt
+
+niimh@bharathi-pc MINGW32 /c/git/testing (master)
+$ ls
+README.md  test.txt
+
+niimh@bharathi-pc MINGW32 /c/git/testing (master)
+$ git add test.txt
+
+niimh@bharathi-pc MINGW32 /c/git/testing (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   test.txt
+
+
+niimh@bharathi-pc MINGW32 /c/git/testing (master)
+$ git commit -m "first commit" test.txt
+[master 168168a] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+niimh@bharathi-pc MINGW32 /c/git/testing (master)
+$ git push -u origin master
+fatal: AggregateException encountered.
+   One or more errors occurred.
+Counting objects: 3, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 300 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/sravanthi6699/testing.git
+   7198337..168168a  master -> master
+Branch master set up to track remote branch master from origin.
+
+niimh@bharathi-pc MINGW32 /c/git/testing (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+niimh@bharathi-pc MINGW32 /c/git/testing (master)
+$ git commit -m "second commit" test.txt
+[master 1563d87] second commit
+ 1 file changed, 8 insertions(+)
+
+niimh@bharathi-pc MINGW32 /c/git/testing (master)
+$ git push -u origin master
+fatal: AggregateException encountered.
+   One or more errors occurred.
+Counting objects: 3, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 307 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/sravanthi6699/testing.git
+   168168a..1563d87  master -> master
+Branch master set up to track remote branch master from origin.
+
+niimh@bharathi-pc MINGW32 /c/git/testing (master)
+$
